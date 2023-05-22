@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Funky HTML Page</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app" align="center" style="vertical-align: middle">
+
+        <label class="sizer" >StartTime:</label><br>
+        <input type="date" class="sizer dt" id="stime" value="2003-12-12"
+               onkeyup="this.value = this.value.replace(/[^\d-]/g,'');"><br>
+        <label class="sizer" >EndTime:</label><br>
+        <input type="date" class="sizer dt"  id="etime" value="2003-12-23"
+               onkeyup="this.value = this.value.replace(/[^\d-]/g,'');"><br>
+        <div id="butn" class="sizer btn" onclick="logoutfunc()">
+            Start </div>
+
+            <div id="fetched-data"  class="sizer dt ans"></div>
+        </div>
+
+    <script src="index.js"></script>
+    <script src="config.js"></script>
+
+</body>
+</html>
